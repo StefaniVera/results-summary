@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(0, 0%, 0%, 0.015);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    margin: 80px auto 0;
+    display: flex;
+    width: 600px;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 13px 13px 20px hsl(221, 100%, 96%);
+}
+
+.container .card {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    border-radius: 25px;
+    flex: 1;
+    padding: 30px;
+}
+
+.container .card #result {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container .card .circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 170px;
+    height: 170px;
+    border-radius: 9999px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .circle .score p:nth-child(1) {
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.container .card .circle .score p:nth-child(2) {
+    color: hsl(241, 100%, 89%);
+}
+
+.container .card h2 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.container .card  p {
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.container .summary {
+    padding: 30px;
+    flex: 1;
+}
+
+.container .summary h3{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.summary .col-one {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.summary .col-one .content, .col-two .content, .col-three .content, .col-four .content {
+    display: flex;
+}
+
+.summary .col-one .content p {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.summary .col-two {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.summary .col-two .content p {
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+.summary .col-three {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.summary .col-three .content p {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.summary .col-four {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.summary .col-four .content p {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+.summary .col-one .content svg, .col-two .content svg, .col-three .content svg, .col-four .content svg {
+    margin-right: 12px;
+}
+
+.summary .col-one .value span, .col-two .value span, .col-three .value span, .col-four .value span {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 800;
+}
+
+.summary .col-one .value p, .summary .col-two .value p, .summary .col-three .value p, .summary .col-four .value p {
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 800;
+}
+
+.summary button {
+    margin-top: 30px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 100px;
+    text-align: center;
+    width: 240px;
+    padding: 15px 0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto 30px;
+    }
+
+    .container .card {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .attribution {
+        margin-bottom: 10px;
+    }
+}
